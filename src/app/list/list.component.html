@@ -1,0 +1,10 @@
+<mat-list>
+    <mat-list-item *ngFor="let vendor of vendors" >
+      {{vendor.name}}
+      {{vendor.address}}
+
+      <button (click)="onView(vendor.id)">Ver</button>
+    </mat-list-item>
+</mat-list>
+
+

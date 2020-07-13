@@ -1,0 +1,36 @@
+<div class="wrapper">
+
+
+
+
+<mat-card *ngIf="vendor" style="text-align: center!important;">
+    <mat-card-header>
+        <mat-card-title>{{vendor.name}}</mat-card-title>
+        <mat-card-subtitle>
+
+          <p>
+            {{vendor.description}}
+          </p>
+
+          <p>{{vendor.phone}}</p>
+
+
+          <span *ngIf="vendor.delivery">
+            Delivery: {{vendor.delivery}}
+          </span>
+
+
+
+
+      </mat-card-subtitle>
+    </mat-card-header>
+
+
+    <mat-card-content>
+      <p>{{vendor.mobile}}</p>
+    </mat-card-content>
+
+
+</mat-card>
+
+</div>
