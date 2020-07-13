@@ -24,7 +24,7 @@ export class ListComponent implements OnInit {
   }
 
   onView(id) {
-    this.router.navigate(['item', id], { relativeTo: this.route });
+    this.router.navigate(['/item/', id], { relativeTo: this.route });
   }
 
 }
